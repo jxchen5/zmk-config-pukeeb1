@@ -49,8 +49,32 @@
             bindings = <&msc>, <&msc>;
             tap-ms = <20>;
         };
+        comma_excl: comma_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        period_question: period_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        enter_percent: comma_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&kp PERCENT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        backspace_at: backspac_at {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp AT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
-
+y
     combos {
         compatible = "zmk,combos";
         combo_tab {
@@ -101,9 +125,9 @@
 
         sym_layer {
             bindings = <
-            &kp LT      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA     &sk LEFT_CONTROL
-            &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp N      &kp E      &kp A      &kp O
-            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp B      &kp H      &kp ENTER      &kp PERIOD      &kp X
+            &kp LT      &kp PLUS      &kp $DLLR     &kp SEMI  &none         &none     &kp CARET     &kp PIPE      &kp EQUAL     &kp GT
+            &kp MINUS      &kp LBRC      &kp RBRC      &kp UNDER      &kp LBKT          &kp RBKT      &kp BSLH    &kp LPAR     &kp RPAR      &kp COLON
+            &kp TILDE     &kp APOS     &kp FSLH      &kp AMPS      &none          &none     &kp ASTRK      &kp HASH      &kp DQT      &kp GRAVE
                                          &none &none  &none  &none    &trans  &trans &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
