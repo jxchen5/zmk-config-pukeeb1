@@ -69,7 +69,7 @@
         entperc: enter_percentage {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp QUESTION>;
+            bindings = <&kp ENTER>, <&kp PERCENT>;
             mods = <(MOD_LSFT)>;
         };
     };
