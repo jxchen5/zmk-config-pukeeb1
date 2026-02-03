@@ -83,14 +83,14 @@
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  ,       │ BACKSPACE│
+            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA  &kp BACKSPACE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
+            &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp E      &kp E      &kp A      &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER   │  ?       │   X      |
+            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &kp I      &kp QUESTION &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &kp K_POWER  &lt 1 ENTER  &lt 3 ESC  &mkp RCLK     &mkp LCLK  &lt 2 BSPC &mt LSHFT SPACE  &kp C_PP
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
