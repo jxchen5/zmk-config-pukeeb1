@@ -83,8 +83,8 @@
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  ,       │ BACKSPACE│
-            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA  &kp BACKSPACE
+        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  ,       │  REPEAT  │
+            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA  &key_repeat
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp E      &kp E      &kp A      &kp O
@@ -92,8 +92,8 @@
         //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER   │  ?       │   X      |
             &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &kp I      &kp QUESTION &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                    &kp K_POWER  &lt 1 ENTER  &lt 3 ESC  &mkp RCLK     &mkp LCLK  &lt 2 BSPC &mt LSHFT SPACE  &kp C_PP
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+                      &kp C_MUTE  &kp BACKSPACE &mo 2   &mo 3          &sk LSHIFT &kp SPACE  &mo 1      &kp C_PP
+        //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
