@@ -101,8 +101,8 @@
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  , !     │  Backspace│
-            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &comexcl   &kp BACKSPACE
+        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  , !     │   ;      │
+            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &comexcl   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp N      &kp E      &kp A      &kp O
@@ -122,10 +122,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &none      &none       &none      &none     &none          &none     &none       &none      &none     &none   
+            &none      &none       &none      &none     &none          &none     &none       &none      &none      &none   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 9        │ 5        │  0       │  3       │ 7        │   │ 6        │ 2        │ 1        │ 4        │  8       │
-            &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4      &kp N8   
+            &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          |          │          │          │          │   │          │          │          │          │          │
             &none      &none       &none      &none     &none          &none      &none       &none      &none     &none   
@@ -139,14 +139,14 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  <       │  +       │  $       │  ;       │          │   │  @       │  ^       │  |       │  =       │  >       │
-            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none          &kp AT      &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
+        //│  <       │  +       │  $       │  ~       │          │   │          │  ^       │  |       │  =       │  >       │
+            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none          &none      &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  {       │  }       │  _       │  [       │   │  ]       │  \       │  (       │  )       │  :       │  
             &kp MINUS   &kp LBRC   &kp RBRC   &kp UNDER &kp LBKT       &kp RBKT   &kp BSLH   &kp LPAR   &kp RPAR   &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ~       │  '       │  /       │  &       │          │   │          │  *       │  #       │  "       │  `       |
-            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp SEMI       &kp GRAVE  &kp ASTRK  &kp HASH   &kp DQT    &key_repeat
+        //│  repeat  │  '       │  /       │  &       │  @       │   │  `       │  *       │  #       │  "       │  repeat  |
+            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp GRAVE  &kp ASTRK  &kp HASH   &kp DQT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans     &trans    &trans     &trans         &trans       &trans     &trans     &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
