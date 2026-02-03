@@ -66,18 +66,6 @@
             bindings = <&kp PERIOD>, <&kp QUESTION>;
             mods = <(MOD_LSFT)>;
         };
-        entperc: enter_percent {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&kp PERCENT>;
-            mods = <(MOD_LSFT)>;
-        };
-        backat: backspace_at {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp AT>;
-            mods = <(MOD_LSFT)>;
-        };
     };
 
     combos {
@@ -113,10 +101,11 @@
         //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp E      &kp E      &kp A      &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER % │  ?       │   X      |
-            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &entperc   &dotques &kp X
+        //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER % │  . ?     │   X      |
+            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &none   &dotques &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                      &kp C_MUTE  &backat    &mo 2   &  &mo 3          &kp LSHIFT &kp SPACE  &mo 1      &kp C_PP
+        //              Mute       
+                       &kp C_MUTE  &none    &mo 2   &  &mo 3          &kp LSHIFT &kp SPACE  &mo 1      &kp C_PP
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
