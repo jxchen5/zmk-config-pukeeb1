@@ -54,11 +54,11 @@
             bindings = <&msc>, <&msc>;
             tap-ms = <20>;
         };
-        gresc: grave_escape {
+        comexcl: comma_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
