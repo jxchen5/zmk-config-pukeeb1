@@ -60,6 +60,12 @@
             bindings = <&kp COMMA>, <&kp EXCL>;
             mods = <(MOD_LSFT)>;
         };
+        dotques: dot_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp QUESTION>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -95,8 +101,8 @@
         //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp E      &kp E      &kp A      &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER   │  ?       │   X      |
-            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &kp I      &kp QUESTION &kp X
+        //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER   │  . ?     │   X      |
+            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp Y      &kp U      &kp I      &dotques &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                       &kp C_MUTE  &kp BACKSPACE &mo 2   &mo 3          &kp LSHIFT &kp SPACE  &mo 1      &kp C_PP
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
