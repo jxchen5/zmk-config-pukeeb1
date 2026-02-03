@@ -140,13 +140,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  <       │  +       │  $       │  ;       │          │   │  @       │  ^       │  |       │  =       │  >       │
-            &kp LT      &kp PLUS   &kp DLLR   &kp SEMI  &none          &kp AT      &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
+            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none          &kp AT      &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  {       │  }       │  _       │  [       │   │  ]       │  \       │  (       │  )       │  :       │  
             &kp MINUS   &kp LBRC   &kp RBRC   &kp UNDER &kp LBKT       &kp RBKT   &kp BSLH   &kp LPAR   &kp RPAR   &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  '       │  /       │  &       │          │   │          │  *       │  #       │  "       │  `       |
-            &kp TILDE   &kp APOS   &kp FSLH   &kp AMPS  &key_repeat    &key_repeat &kp ASTRK &kp HASH   &kp DQT    &kp GRAVE
+            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp SEMI       &kp GRAVE  &kp ASTRK  &kp HASH   &kp DQT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans     &trans    &trans     &trans         &trans       &trans     &trans     &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
