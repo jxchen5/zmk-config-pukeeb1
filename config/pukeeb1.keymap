@@ -82,10 +82,18 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA     &sk LEFT_CONTROL
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
+            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &kp COMMA   &sk LEFT_CONTROL
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp N      &kp E      &kp A      &kp O
-            &kp Q      &kp V      &kp W      &kp D      &kp J          &kp B      &kp H      &kp ENTER      &kp PERIOD      &kp X
-                         &kp K_MUTE  &kp BACKSPACE  &mo 2  &mo 3    &sk LEFT_SHIFT  &kp SPACE &  &mo 1
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
+             &kp Q      &kp V      &kp W      &kp D      &kp J          &kp B      &kp H     &kp ENTER  &kp PERIOD &kp 
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                    &kp K_POWER  &lt 1 ENTER  &lt 3 ESC  &mkp RCLK     &mkp LCLK  &lt 2 BSPC &mt LSHFT SPACE  &kp C_PP
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
