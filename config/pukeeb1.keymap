@@ -115,8 +115,7 @@
             >;
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc ROT_MSC_SUP ROT_MSC_SDN>;
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN &rot_msc ROT_MSC_SUP ROT_MSC_SDN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc ROT_MSC_SUP ROT_MSC_SDN>;
         };
 
         num_layer {
