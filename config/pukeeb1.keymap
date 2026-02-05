@@ -128,7 +128,7 @@
         //│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  ENTER % │  . ?     │   X      |
             &kp Q      &kp V      &kp W      &kp D      &kp J          &kp B      &kp H      &entperc   &dotques   &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                       &kp C_MUTE  &key_repeat &mo 2     &mo 3         &mo  1     &kp SPACE  &sk LSHIFT &kp C_PP
+                       &kp C_MUTE &sl 3      &mo 2      &key_repeat    &mo  1     &kp SPACE  &sk LSHIFT &kp C_PP
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
