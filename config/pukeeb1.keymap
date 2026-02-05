@@ -103,7 +103,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp Q &kp U &kp E>;
-        };               
+        };
+        sys: sys {
+            compatible = "zmk,behavior-macro";
+            #bindings = <&macro_tap &kp S &kp Y &kp S>;
+        };
     };
 
     conditional_layers {
@@ -140,7 +144,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &eu        &ue         &que       &none     &none          &none     &none       &none      &none      &none   
+            &eu        &que         &ue       &sys     &none          &none     &none       &none      &none      &none   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 9        │ 5        │  0       │  3       │ 7        │   │ 6        │ 2        │ 1        │ 4        │  8       │
             &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
