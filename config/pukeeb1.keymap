@@ -89,17 +89,17 @@
     };
 
     macros {
-        ue: ue {
+        u_e: u_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp U &kp E>;
         };
-        eu: eu {
+        e_u: e_u {
             compatible = "zmk, behavior-macro";
             #bing-cells = <0>;
             bindings = <&macro_tap &kp E &kp U>;
         };
-        que: que {
+        q_u_e: q_u_e {
             compatible = "zmk, behavior-macro";
             #bing-cells = <0>;
             bindings = <&macro_tap &kp Q &kp U &kp E>;
