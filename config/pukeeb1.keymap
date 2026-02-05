@@ -73,9 +73,6 @@
             bindings = <&kp ENTER>, <&kp PERCENT>;
             mods = <(MOD_LSFT)>;
         };
-        ue: ue {
-            binding = <&ue>;
-        };
     };
 
     macros {
@@ -84,6 +81,7 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp u &kp e>; 
         };
+    };
 
     combos {
         compatible = "zmk,combos";
