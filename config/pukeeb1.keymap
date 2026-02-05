@@ -73,7 +73,15 @@
             mods = <(MOD_LSFT)>;
         };
     };
-
+    macros {
+        ue: ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp u &kp >
+                ;
+        };
+    }
     combos {
         compatible = "zmk,combos";
         combo_tab {
@@ -140,7 +148,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  <       │  +       │  $       │  ~       │          │   │  `       │  ^       │  |       │  =       │  >       │
-            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none         &kp GRVAR  &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
+            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none         &kp GRVAE  &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  {       │  }       │  _       │  [       │   │  ]       │  \       │  (       │  )       │  :       │  
             &kp MINUS   &kp LBRC   &kp RBRC   &kp UNDER &kp LBKT       &kp RBKT   &kp BSLH   &kp LPAR   &kp RPAR   &kp COLON
