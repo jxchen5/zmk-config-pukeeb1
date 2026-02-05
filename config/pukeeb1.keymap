@@ -1,4 +1,3 @@
-
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
@@ -95,6 +94,16 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp U &kp E>;
         };
+        eu: eu {
+            compatible = "zmk, behavior-macro";
+            #bing-cells = <0>;
+            bindings = <&macro_tap &kp E &kp U>;
+        };
+        que: que {
+            compatible = "zmk, behavior-macro";
+            #bing-cells = <0>;
+            bindings = <&macro_tap &kp Q &kp U &kp E>;
+        };
     };
 
     conditional_layers {
@@ -131,7 +140,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &ue        &none       &none      &none     &none          &none     &none       &none      &none      &none   
+            &ue        &eu         &que       &none     &none          &none     &none       &none      &none      &none   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 9        │ 5        │  0       │  3       │ 7        │   │ 6        │ 2        │ 1        │ 4        │  8       │
             &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
