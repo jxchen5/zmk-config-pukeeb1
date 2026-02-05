@@ -74,13 +74,6 @@
             mods = <(MOD_LSFT)>;
         };
     };
-    macros {
-        ue: ue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp u &kp e>;
-        };
-    };
     combos {
         compatible = "zmk,combos";
         combo_tab {
