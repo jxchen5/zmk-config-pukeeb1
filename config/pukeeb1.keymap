@@ -99,6 +99,11 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp E &kp U>;
         };
+        que: que {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp Q &kp U &kp E>;
+        };               
     };
 
     conditional_layers {
