@@ -111,8 +111,12 @@
         };
         cmd_prompt: cmd_prompt {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; 
-            bindings = <&macro_tap &kp LG(R) &kp C &kp M &kp D &kp ENTER>;
+            #binding-cells = <0>;  
+            bindings 
+                = <&macro_tap &kp LG(R)>
+                , <&macro_tap &kp C &kp M &kp D>
+                , <&macro_tap &kp ENTER>
+                ;
         };
     };
 
