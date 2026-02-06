@@ -112,8 +112,9 @@
         cmd_prompt: cmd_prompt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
-            bindings = <&macro_tap &kp LG(R) &kp C &kp M &kp D &kp ENTER> 
-};
+            bindings = <&macro_tap &kp LG(R) &kp C &kp M &kp D &kp ENTER>;
+        };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
