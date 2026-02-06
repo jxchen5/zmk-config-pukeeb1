@@ -171,7 +171,7 @@
         //│  repeat  │  '       │  /       │  &       │  @       │   │ Caps Lock│  *       │  #       │  "       │  repeat  |
             &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp CAPS   &kp ASTRK  &kp HASH   &kp DQT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        &trans     &trans    &trans     &trans         &trans       &trans     &trans     &trans
+                        &trans     &trans     &trans    &trans         &trans     &trans     &trans     &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
@@ -189,7 +189,7 @@
         //│ Cut      │  Copy           │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ ENTER       │ One Word Right  │ Delete Word    │
             &kp LC(X)   &kp LC(C)         &kp LC(V)        &kp LC(Z)           &kp LC(Y)           &kp LC(LEFT)   &sk LCTRL       &kp ENTER     &kp LC(RIGHT)     &kp LC(BACKSPACE)
         //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯
-                        &trans            &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans        &trans
+                        &trans            &trans           &trans              &trans             &mkp MB2        &mkp MB1        &sk LGUI      &trans
         //           ╰─────────────────┴────────────────┴────────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────┴─────────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
