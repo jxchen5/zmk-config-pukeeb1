@@ -138,8 +138,8 @@
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  , !     │   ;      │
-            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &comexcl   &kp SEMI
+        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  , !     │   ESC    │
+            &kp Y      &kp C      &kp L      &kp M      &kp K          &kp Z      &kp F      &kp U      &comexcl   &kp ESC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  I       │  S       │  R       │  T       │  G       │   │  P       │  N       │  E       │  A       │   O      │
             &kp I      &kp S      &kp R      &kp T      &kp G          &kp P      &kp N      &kp E      &kp A      &kp O
@@ -176,14 +176,14 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  <       │  +       │  $       │  ~       │          │   │  `       │  ^       │  |       │  =       │  >       │
-            &kp LT      &kp PLUS   &kp DLLR   &kp TILDE  &none          &kp GRAVE &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
+        //│  <       │  +       │  #       │  ~       │          │   │  `       │  ^       │  |       │  =       │  >       │
+            &kp LT      &kp PLUS   &kp HASH   &kp TILDE  &none          &kp GRAVE &kp CARET  &kp PIPE   &kp EQUAL  &kp GT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  {       │  }       │  _       │  [       │   │  ]       │  \       │  (       │  )       │  :       │  
             &kp MINUS   &kp LBRC   &kp RBRC   &kp UNDER &kp LBKT       &kp RBKT   &kp BSLH   &kp LPAR   &kp RPAR   &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  repeat  │  '       │  /       │  &       │  @       │   │ Caps Lock│  *       │  #       │  "       │  repeat  |
-            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp CAPS   &kp ASTRK  &kp HASH   &kp DQT    &key_repeat
+        //│  repeat  │  '       │  /       │  &       │  @       │   │  ;       │  *       │  $       │  "       │  repeat  |
+            &key_repeat &kp APOS   &kp FSLH   &kp AMPS  &kp AT         &kp SEMI   &kp ASTRK  &kp DLLR   &kp DQT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans     &trans     &trans    &trans         &trans     &trans     &trans     &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
@@ -194,8 +194,8 @@
         comb_layer {
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
-        //│ ESC      | Toggle Program  │ Close Pprogram │ Switch Language    │ Redo in Vim │   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
-            &kp ESC    &kp LA(TAB)       &kp LA(F4)        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+        //│ CAPS     | Toggle Program  │ Close Pprogram │ Switch Language    │ Redo in Vim │   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
+            &kp CAPS   &kp LA(TAB)       &kp LA(F4)        &kp LG(SPACE)        &kp LC(R)          &kp LG(LC(V))  &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
         //│ TAB      │  HOME           │  END           │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
             &kp TAB    &kp HOME           &kp END          &kp BACKSPACE       &kp DEL             &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
