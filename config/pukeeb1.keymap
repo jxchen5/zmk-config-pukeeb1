@@ -1,3 +1,4 @@
+
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
@@ -170,7 +171,7 @@
             &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &none      &none       &scr       &trans     &cmd_prompt    &none      &none       &none      &none     &none   
+            &none      &none       &scr       &none     &cmd_prompt    &none      &none       &none      &none     &none   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans     &trans    &kp DOT    &trans         &trans     &trans     &trans      &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
