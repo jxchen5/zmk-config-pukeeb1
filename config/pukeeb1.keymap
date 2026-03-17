@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp O &kp X>;
         };
-        p_h: p_ h {
+        p_h: p_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp P &kp H>;
