@@ -104,6 +104,11 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp O &kp X>;
         };
+        ph: ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp P &kp H>;
+        };
         que: que {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -170,7 +175,7 @@
             &kp N9     &kp N5      &kp N0     &kp N3    &kp N7         &kp N6     &kp N2     &kp N1     &kp N4     &kp N8   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          |          │          │          │          │   │          │          │          │          │          │
-            &none      &none       &scr       &none     &cmd_prompt    &none      &none       &none      &none     &none   
+            &none      &none       &scr       &ph     &cmd_prompt    &none      &none       &none      &none     &none   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans     &trans    &kp DOT    &trans         &trans     &trans     &trans      &trans
         //           ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
