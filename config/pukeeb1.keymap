@@ -115,7 +115,7 @@
             bindings = <&macro_tap &kp S &kp Y &kp S>;
         };
         scr: scr{
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>;
             bindings = <&macro_tap &kp S &kp C &kp R>;
         };
@@ -125,8 +125,7 @@
             bindings 
                 = <&macro_tap &kp LG(R)>
                 , <&macro_tap &kp C &kp M &kp D>
-                , <&macro_tap &kp ENTER>
-                ;
+                , <&macro_tap &kp ENTER>;
         };
     };
 
