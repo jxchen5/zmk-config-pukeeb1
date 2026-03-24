@@ -199,14 +199,14 @@
         comb_layer {
             bindings = <
         //╭──────────┬─────────────────┬────────────────┬────────────────────┬─────────────╮   ╭──────────────┬───────────────┬─────────────┬─────────────────┬────────────────╮
-        //│ CAPS     | Toggle Program  │  Ctrl + Shift  │ Switch Language    │Close Program│   │ Sound Output │ Reopen Tab    │ Close Tab   │  Switch Tab     │ LALT           │
-            &kp CAPS   &kp LA(TAB)       &sk LC(LSHIFT)   &kp LG(SPACE)        &kp LA(F4)         &kp LG(LC(V))   &kp LC(LS(T))   &kp LC(W)     &kp LC(TAB)       &kp LALT 
+        //│          | Toggle Program  │  Ctrl + Shift  │  Cut               │             │   │ Reopen Tab   │ Close Program │ Close Tab   │  Switch Tab     │ LALT           │
+            &none      &kp LA(TAB)        &sk LC(LSHIFT)    &kp LC(X)           &none              &kp LC(LS(T))   &kp LA(F4)   &kp LC(W)     &kp LC(TAB)       &kp LALT 
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
-        //│ TAB      │  HOME           │  END           │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
-            &kp TAB    &kp HOME           &kp END          &kp BACKSPACE       &kp DEL            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
+        //│ TAB      │  CAPS           │  Copy          │  BACKSPACE         │ DELETE      │   │ Left         │ Down          │ Up          │ Right           │ Select All     │
+            &kp TAB    &kp CAPS           &kp LC(C)         &kp BACKSPACE       &kp DEL            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT         &kp LC(A)
         //├──────────┼─────────────────┼────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┼─────────────────┼────────────────┤
-        //│ Cut      │  Copy           │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ Sticky LGUI │ One Word Right  │ Delete Word    │
-            &kp LC(X)   &kp LC(C)         &kp LC(V)        &kp LC(Z)           &kp LC(Y)          &kp LC(LEFT)    &sk LCTRL       &sk LGUI      &kp LC(RIGHT)     &kp LC(BACKSPACE)
+        //│ HOME     │  END            │  Paste         │  Undo              │ Redo        │   │ One Word Left│ Sticky LCTRL  │ Sticky LGUI │ One Word Right  │ Delete Word    │
+            &kp HOME   &kp END            &kp LC(V)        &kp LC(Z)           &kp LC(Y)          &kp LC(LEFT)    &sk LCTRL       &sk LGUI      &kp LC(RIGHT)     &kp LC(BACKSPACE)
         //╰──────────┴─────────────────┴────────────────┼────────────────────┼─────────────┤   ├──────────────┼───────────────┼─────────────┴─────────────────┴────────────────╯
                         &trans            &trans           &trans              &trans             &mkp MB2        &mkp MB1        &trans        &trans
         //           ╰─────────────────┴────────────────┴────────────────────┴─────────────╯   ╰──────────────┴───────────────┴─────────────┴─────────────────╯ 
