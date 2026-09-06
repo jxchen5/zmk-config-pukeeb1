@@ -20,6 +20,9 @@
 #define U_MSS_TP_S_D &mms MS_TP_SENSITIVITY_DECR
 
 / {
+    scroller {
+	        layers = <2>;
+	        input-processors = <&zip_xy_to_scroll_mapper>;
     behaviors {
         ht: hold_tap {
             display-name = "Hold Tap";
