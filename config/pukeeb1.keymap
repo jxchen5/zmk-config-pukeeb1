@@ -14,8 +14,6 @@
 #define ROT_MSC_SRT MOVE_X(ROT_MSC_VAL)
 
 
-#include <behaviors/mouse_setting.dtsi>
-#include <dt-bindings/zmk/mouse_settings.h>
 #define U_MSS_TP_S_I &mms MS_TP_SENSITIVITY_INCR
 #define U_MSS_TP_S_D &mms MS_TP_SENSITIVITY_DECR
 
